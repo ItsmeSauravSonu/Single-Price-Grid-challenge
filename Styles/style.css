@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+:root{
+    /* primary colors */
+ --Cyan: hsl(179,62%,43%);
+ --Bright-yellow: hsl(71,73%,54%);
+
+ /* Neutral Colors */
+ --Light-gray : hsl(204,43%,93%);
+ --Grayish-blue: hsl(218, 22%,67%);
+
+}
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   min-height: 100vh;
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    background: var(--Light-gray);
+}
+
+
+main{
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.container{
+    padding: 25px 20px;
+}
+
+.top{
+    background-color: white;
+    border-radius: 5px 5px 0 0;
+}
+.top h1{
+    color: var(--Cyan);
+    font-size: 17px;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+.top h3{
+    color: var(--Bright-yellow);
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.top p{
+    font-size: 12px;
+    line-height: 1.6;
+    color: var(--Grayish-blue);
+}
+
+.left{
+    background-color: var(--Cyan);
+    color: var(--Light-gray);
+}
+
+.left h1{
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.left  p {
+font-size: 13px;
+align-content: center;
+font-weight: 400;
+margin-bottom: 5px;
+color: var(--Light-gray);
+}
+
+.left div span{
+    font-size: 26px;
+    font-weight: 700;
+    padding-right: 5px;
+    vertical-align: middle;
+    opacity: 1 !important;
+    color: white;
+}
+
+.left  p {
+    margin-top: 8px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+button{
+    width:100%;
+    padding: 10px 50px;
+    background-color: var(--Bright-yellow);
+    color: var(--Light-gray);
+    font-weight: 700;
+    border: 0;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgb(10 13 57 / 15%);
+}
+
+button:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.right{
+    background-color: var(--Cyan);
+    opacity: 0.8;
+    color: var(--Light-gray);
+    border-radius: 0 0 5px 5px;
+}
+
+.right h1{
+    font-size: 15px;
+    margin-bottom: 20px;
+    color: white;
+}
+
+li{
+    list-style: none;
+    font-size: 12px;
+    opacity: 0.8;
+    line-height: 1.5;
+}
+
+@media(min-width: 600px)
+{
+    main{
+        max-width: 575px;
+    }
+    .container{
+        padding: 30px;
+    }
+    .first p{
+        width: 80%;
+    }
+
+    .bottom{
+        display: flex;
+        max-width: 100%;
+    }
+    .left,
+    .right{
+        width: 50%;
+    }
+}
